@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# 💼 Job Listings with Filterable Categories
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive job board built with **React** that displays job postings and allows filtering by role, level, languages, and tools. Inspired by frontend challenges and built to showcase clean UI and dynamic filtering logic.
 
-Currently, two official plugins are available:
+🌐 Live Demo: *Coming Soon*  
+📦 GitHub Repo: [https://github.com/3laa-812/job-listings](https://github.com/3laa-812/job-listings)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Dynamic job card rendering from local JSON
+- 🎯 Filter by **Role**, **Level**, **Languages**, and **Tools**
+- 🖱️ Click tags to add filters
+- ❌ Remove individual filters or clear all
+- 📱 Responsive layout (mobile-friendly)
+- 🎨 Styled with **Tailwind CSS**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Tech Stack
+
+| Tool          | Purpose                        |
+|---------------|--------------------------------|
+| React         | Front-end framework            |
+| Tailwind CSS  | Utility-first CSS styling      |
+| Vite / CRA    | Fast development environment   |
+| JSON          | Static local data for jobs     |
+
+---
+
+## 📂 Project Structure
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+job-listings/
+├── public/
+│ └── images/ # Company logos
+├── src/
+│ ├── assets/ # Static assets (e.g. SVGs)
+│ ├── components/ # Reusable UI components
+│ │ ├── FilterBar.tsx
+│ │ ├── Header.tsx
+│ │ └── JobCard.tsx
+│ ├── pages/ # Page views
+│ │ └── Home.tsx
+│ ├── data.json # Static job data
+│ ├── types.ts # TypeScript interfaces
+│ ├── App.tsx # Main app wrapper
+│ ├── App.css # Global styles
+│ └── main.tsx # Entry point
+├── index.html
+└── README.md
 ```
+---
+
+## 🛠️ Tech Stack
+
+| Tool / Library   | Description                    |
+|------------------|--------------------------------|
+| React            | JavaScript UI library          |
+| Tailwind CSS     | Utility-first CSS framework    |
+| Vite / CRA       | (Depends on setup) Dev server  |
+| JSON             | Local data source for listings |
+
+---
+
+## 🧩 How Filtering Works
+
+- Each job contains:
+  - Role (e.g. `Frontend`)
+  - Level (e.g. `Junior`)
+  - Languages (e.g. `JavaScript`)
+  - Tools (e.g. `React`, `Sass`)
+- Clicking any tag adds it to the active filter list.
+- Jobs are displayed only if **they match all selected filters**.
+- "Clear All" button resets the filter state.
+---
+
+## 👤 Author
+Made with ❤️ by 3laa
