@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@theme {
+    --color-primary-dark-cyan: hsl(180, 29%, 50%);
+    --color-neutral-light-grayish-cyan: hsl(180, 52%, 96%);
+    --color-neutral-light-grayish-cyan-filter: hsl(180, 31%, 95%);
+    --color-neutral-dark-grayish-cyan: hsl(180, 8%, 52%);
+    --color-neutral-very-dark-grayish-cyan: hsl(180, 14%, 20%);
+  }  
