@@ -2,8 +2,7 @@
 
 A responsive job board built with **React** that displays job postings and allows filtering by role, level, languages, and tools. Inspired by frontend challenges and built to showcase clean UI and dynamic filtering logic.
 
-🌐 Live Demo: *Coming Soon*  
-📦 GitHub Repo: [https://github.com/3laa-812/job-listings](https://github.com/3laa-812/job-listings)
+🌐 Live Demo:  [Here](https://job-listings-pi.vercel.app/)
 
 ---
 
